@@ -33,12 +33,12 @@ public class CanvasLocationController : MonoBehaviour {
         RebuildCanvasAnchorsFromTags();
         IsActive = true;
         MoveToNewAnchor();
-        GameManager.LoadLevelEvent += RefreshOnLevelLoad;
+
     }
 
     private void OnDestroy()
     {
-        GameManager.LoadLevelEvent -= RefreshOnLevelLoad;
+
     }
 
     private void RefreshOnLevelLoad()
